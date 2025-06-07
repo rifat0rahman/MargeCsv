@@ -1,11 +1,17 @@
 <template>
-  <Core/>
+  <div id="app">
+    <Navbar />
+    <router-view />
+  </div>
 </template>
 
+<script>
+import Navbar from "./components/Navbar.vue";
 
-<script setup>
-import Core from './components/core.vue'
-
+export default {
+  name: "App",
+  components: {
+    Navbar,
+  },
+};
 </script>
-<style scoped>
-</style>
